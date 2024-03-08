@@ -7,6 +7,13 @@ body {
     font-family: open-sans;
     font-weight: 400;
     margin: 0;
+    overflow-x: hidden;
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 #wrapper {
@@ -14,7 +21,7 @@ body {
 }
 
 #footer {
-    position: relative;
+    position: sticky;
     margin: auto;
     width: 100%;
     height: auto;
@@ -37,6 +44,10 @@ body {
     border: 1px white;
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+#maincontainer::-webkit-scrollbar {
+    display: none;
 }
 
 #maincontainer div {
